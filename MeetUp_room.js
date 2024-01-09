@@ -29,6 +29,13 @@ getData();
             localStorage.setItem("room_name", name);
             window.location = "MeetUp_chat.html";
       }
+      function logout() {
+         localStorage.removeItem("user_name");
+         localStorage.removeItem("room_name");
+         window.location = "kwitter.html";
+
+
+      }
 function addroom() 
 {
       room_name = document.getElementById("room_name").value;
@@ -39,5 +46,5 @@ function addroom()
          
       localStorage.setItem("room_name", room_name);
 
-      //window.location = "MeetUp_chat.html";
+      window.location = "MeetUp_page.html";
 }
